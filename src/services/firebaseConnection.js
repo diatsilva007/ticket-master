@@ -5,13 +5,13 @@ import { getFirestore } from 'firebase/firestore'
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDKHTFMQWEaNl1AIysegfoyM3K90q5mrZw",
-  authDomain: "ticket-master-df8b8.firebaseapp.com",
-  projectId: "ticket-master-df8b8",
-  storageBucket: "ticket-master-df8b8.firebasestorage.app",
-  messagingSenderId: "1079502551469",
-  appId: "1:1079502551469:web:b4c82cb8a6abcaa0d1c924",
-  measurementId: "G-N2M4P50WRS"
+  apiKey: "AIzaSyAEY7z3-5H_N5ITwKguRNZqdWNDYWRU2ps",
+  authDomain: "tickets-332d2.firebaseapp.com",
+  projectId: "tickets-332d2",
+  storageBucket: "tickets-332d2.appspot.com",
+  messagingSenderId: "644025068626",
+  appId: "1:644025068626:web:c4014df1b23b1a63ed038b",
+  measurementId: "G-R7HBZ6YGMW"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
