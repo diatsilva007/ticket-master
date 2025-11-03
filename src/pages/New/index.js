@@ -125,7 +125,7 @@ export default function New(){
         navigate('/dashboard')
       })
       .catch((error) => {
-        toast.error("Ops, erro ao atualizar esse chamado!")
+        toast.error("Ops erro ao atualizar esse chamado!")
         console.log(error);
       })
 
