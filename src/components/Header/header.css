@@ -52,6 +52,19 @@
   color: #FFF;
 }
 
+.logout-btn-header {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  background-color: transparent;
+  border: 0;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
+
 .content{
   margin-left: 200px;
   padding: 1px 16px;

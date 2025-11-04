@@ -1,18 +1,21 @@
-import { useContext } from 'react'
-import avatarImg from '../../assets/avatar.png'
-import { Link } from 'react-router-dom'
+import { useContext } from "react";
+import avatarImg from "../../assets/avatar.png";
+import { Link } from "react-router-dom";
 
-import { AuthContext } from '../../contexts/auth'
-import { FiHome, FiUser, FiSettings } from 'react-icons/fi'
-import './header.css';
+import { AuthContext } from "../../contexts/auth";
+import { FiHome, FiUser, FiSettings, FiLogOut } from "react-icons/fi";
+import "./header.css";
 
-export default function Header(){
-  const { user } = useContext(AuthContext);
+export default function Header() {
+  const { user, logout } = useContext(AuthContext);
 
-  return(
+  return (
     <div className="sidebar">
       <div>
-        <img src={user.avatarUrl === null ? avatarImg : user.avatarUrl} alt="Foto do usuario" />
+        <img
+          src={user && user.avatarUrl ? user.avatarUrl : avatarImg}
+          alt="Foto do usuario"
+        />
       </div>
 
       <Link to="/dashboard">
@@ -29,6 +32,11 @@ export default function Header(){
         <FiSettings color="#FFF" size={24} />
         Perfil
       </Link>
+
+      <button className="logout-btn-header" onClick={() => logout()}>
+        <FiLogOut color="#FFF" size={24} />
+        Sair
+      </button>
     </div>
-  )
+  );
 }
